@@ -1,0 +1,348 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden; /* scroll kora jai na, content frize hoya jabi */
+}
+.main{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+   width: 340px;
+   margin-right: 0.5rem;
+   border-radius: 1rem;/* 1rem=16px */
+
+}
+
+ /* start navbar css section */
+.nav{
+    height: 100px;
+    background-color: #121212;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;/* 1rem=16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.6rem 0.75rem;
+}
+.nav-option{
+    background-color: #121212;
+    height: auto;
+    opacity: 0.7; /* sposto hekhabina */
+}
+.nav-option:hover{
+    opacity: 1; /*hover korli sposto hekha jabi */
+}
+.nav-option i{
+    font-size: 1.5rem;
+
+}
+.nav-option a{
+    font-size: 1rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+/*End navbar css section */
+
+ /* start library css section  */
+.library{
+    background-color: #121212;
+    margin-top: 0.75rem;
+    border-radius: 1rem;/* 1rem=16px */
+    padding: 0.6rem 0.75rem;
+    height: 100%;
+    
+}
+.option{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.icons {
+    font-size: 1.3rem;
+    background-color: #121212;
+    
+}
+.icons i{
+    opacity: 0.7;
+    margin: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+    
+}
+/* End css library section  */
+
+/* start css library box section  */
+.lib-box{
+    background-color: #121212;
+    
+}
+.box{
+    background-color: #232323;
+    margin: 0.5rem 0 1.75rem 0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    height: 7.5rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #232323;
+}
+.box-p2{
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.75rem;
+    background-color: #232323;
+}
+.badge{
+    background-color: #fff;
+    height: 2rem;
+    width: fit-content;
+    color: #000;
+    font-weight: 700;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+}
+/* end css library box section  */
+
+.bg-color{
+    background-color: #121212;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1; /* sidebar wide neyar por j jaiga thakbi tar puro ta dokhol korbi */
+    border-radius: 1rem;
+    overflow: auto; /* scroll bar hobi*/
+    padding: 0 1.5rem 0 1.5rem; 
+}
+/* start css  sticky navbar section  */
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+.sticky-nav{
+    background-color: #;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;   
+    
+}
+.sticky-nav-icon{
+    margin: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+/* end css  sticky navbar section  */
+
+/* start css  cards section  */
+.card{
+    background-color: #232323;
+    height: 280px;
+    width: 180px;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+.card-title{
+    background-color: #232323;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+.card-info{
+    background-color: #232323;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    padding: 0.5rem ;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+/* end css  cards section  */
+
+/*Start main-content footer css section */
+.footer{
+    background-color: #121212;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.line{
+    background-color: #121212;
+    height: 20%;
+    width: 90%;
+    border-top: 1px solid #fff;
+}
+/*End main-content footer css section */
+
+
+/*Start footer css section */
+.music-player{
+    background-color:black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* start album css section in footer */
+.album{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album-img{
+    height: 4rem;
+    width: 6rem;
+    margin: 0.75rem;
+}
+.album-title{
+    font-size: 1rem;
+}
+.album-singer{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+.album-icons{
+    height: 4rem;
+    width: 6rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.album-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.25rem;
+    opacity: 0.7;
+}
+.album-icon:hover{
+    opacity: 1;
+}
+/* End album css section in footer */
+
+/* start player css section in footer */
+.player{
+    background-color: brown;
+    width: 50%;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.player-control-icon{
+height: 1rem;
+margin-right: 2rem;
+opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 55%;
+    appearance: none; /* all pre-style will remove for this  */
+    cursor: pointer;
+    background-color: #fff;
+}
+/* learn more about below section in quirks mood */
+.progress-bar::-webkit-slider-runnable-track{
+background-color: #989494;
+border-radius: 100%;
+height: 0.3rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 100%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
+/* End player css section in footer */
+
+/* start player css section in footer */
+
+.controls{
+    width: 28%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls-icon{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.7;
+    
+}
+.controls-sm-icon{
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.7;
+    
+}
+.controls-sm-icon:hover{
+    opacity: 1;
+}
+.controls-icon:hover{
+    opacity: 1;
+}
+.volume-bar{
+    width: 25%;
+}
+
+ /* End player css section in footer */
+
+/*End footer css section */

@@ -1,0 +1,53 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden; /* scroll kora jai na, content frize hoya jabi */
+}
+main{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+   width: 350px;
+   border-radius: 1rem;/* 1rem=16px */
+
+}
+ /* start navbar css section */
+ .nav{
+    height: 160px;
+    background-color: #121212;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;/* 1rem=16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.6rem 0.75rem;
+}
+.nav-option{
+    
+    height: auto;
+    opacity: 0.7; /* sposto hekhabina */
+}
+.nav-option:hover{
+    opacity: 1; /*hover korli sposto hekha jabi */
+}
+.nav-option i{
+    font-size: 1.5rem;
+
+}
+.nav-option a{
+    font-size: 1rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+/*End navbar css section */
